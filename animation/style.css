@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+.box {
+    width: 1200px;
+    height: 400px;
+    background-color: yellow;
+}
+
+@keyframes ball {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 250px;
+        left: 300px;
+        background-color: rgb(144, 142, 139);
+    }
+    50%{
+        top: 0;
+        left: 600px;
+        background-color: rgb(239, 18, 18);
+    }
+    75%{
+        top: 250px;
+        left: 800;
+        background-color: rgb(202, 88, 30);
+    }
+    100%{
+        top: 0;
+        left: 1050px;
+        background-color: violet;
+    }
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+
+
+    animation: ball 3s ease-in-out 1s infinite alternate;
+}
+
